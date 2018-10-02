@@ -14,4 +14,4 @@ var settings = new SwaggerToTypeScriptClientGeneratorSettings {
 var generator = new SwaggerToTypeScriptClientGenerator(document, settings);
 var code = generator.GenerateFile();
 
-File.WriteAllText("client/Api.ts", code);
+File.WriteAllText("client/generated/Api.ts", code);

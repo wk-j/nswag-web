@@ -13,7 +13,7 @@ export class ValuesClient {
 
     constructor(baseUrl?: string, http?: { fetch(url: RequestInfo, init?: RequestInit): Promise<Response> }) {
         this.http = http ? http : <any>window;
-        this.baseUrl = baseUrl ? baseUrl : "https://localhost:5001";
+        this.baseUrl = baseUrl ? baseUrl : "http://localhost:5000";
     }
 
     getAll(): Promise<string[]> {

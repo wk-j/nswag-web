@@ -9,6 +9,7 @@ obj
 packages
 tools
 publish
+wwwroot
 
 .paket
 .settings

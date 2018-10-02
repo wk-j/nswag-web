@@ -39,6 +39,9 @@ namespace NSwagWeb {
             }
 
             app.UseStaticFiles();
+            app.UseCors(config => {
+                config.AllowAnyOrigin();
+            });
 
             app.UseHttpsRedirection();
             app.UseMvc();
